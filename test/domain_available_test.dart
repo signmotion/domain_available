@@ -2,7 +2,7 @@ import 'package:domain_available/domain_available.dart';
 import 'package:test/test.dart';
 
 void main() async {
-  group('ok', () {
+  group('registeredStatus', () {
     test('check a domain available for registration', () async {
       const name = 'mykind456932notregistered0941527';
       const tld = 'org';

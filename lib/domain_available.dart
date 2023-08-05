@@ -7,4 +7,5 @@ export 'src/base_domain_checker.dart';
 export 'src/checked_domain.dart';
 export 'src/default_tlds.dart';
 export 'src/domain_available.dart';
+export 'src/list_checked_domain_ext.dart';
 export 'src/registered_status.dart';

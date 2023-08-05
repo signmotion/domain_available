@@ -6,6 +6,7 @@ import '../base_domain_checker.dart';
 import '../default_tlds.dart';
 import '../registered_status.dart';
 import '../checked_domain.dart';
+import '../list_checked_domain_ext.dart';
 
 /// \see https://instantdomainsearch.com
 /// \thanks https://github.com/breitburg/domine
@@ -74,7 +75,7 @@ class InstantDomainSearchCheck extends BaseDomainChecker {
       await Future.delayed(const Duration(seconds: 2));
     }
 
-    return [
+    return <CheckedDomain>[
       for (final check in decoded)
         CheckedDomain(
           name,
@@ -85,7 +86,7 @@ class InstantDomainSearchCheck extends BaseDomainChecker {
             _ => RegisteredStatus.unknown,
           },
         )
-    ];
+    ].mergedByRegisteredStatus;
   }
 }
 
