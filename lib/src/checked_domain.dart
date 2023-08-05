@@ -1,4 +1,4 @@
-import 'registered_domain_status.dart';
+import 'registered_status.dart';
 
 class CheckedDomain implements Comparable<CheckedDomain> {
   final String name;

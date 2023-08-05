@@ -4,7 +4,7 @@ import 'package:http/http.dart';
 
 import '../base_domain_checker.dart';
 import '../default_tlds.dart';
-import '../registered_domain_status.dart';
+import '../registered_status.dart';
 import '../checked_domain.dart';
 
 /// \see https://instantdomainsearch.com
