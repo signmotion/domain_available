@@ -1,15 +1,15 @@
 import 'registered_status.dart';
 
 class CheckedDomain implements Comparable<CheckedDomain> {
-  final String name;
-  final String tld;
-  final RegisteredStatus registeredStatus;
-
   const CheckedDomain(
     this.name,
     this.tld, {
     required this.registeredStatus,
   });
+
+  final String name;
+  final String tld;
+  final RegisteredStatus registeredStatus;
 
   String get domain => '$name.$tld';
 

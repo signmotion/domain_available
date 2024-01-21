@@ -11,7 +11,7 @@ import '../utils_ext.dart';
 
 /// \see https://instantdomainsearch.com
 /// \thanks https://github.com/breitburg/domine
-/// TODO Enhance a check with https://lookup.icann.org : https://github.com/icann/czds-api-client-python
+/// TODO(sign): Enhance a check with https://lookup.icann.org : https://github.com/icann/czds-api-client-python
 class InstantDomainSearchCheck extends BaseDomainChecker {
   const InstantDomainSearchCheck()
       : super(
