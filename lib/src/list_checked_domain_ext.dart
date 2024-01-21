@@ -4,7 +4,7 @@ import 'registered_status.dart';
 extension ListCheckedDomainExt on List<CheckedDomain> {
   /// Removes duplicates detected by [CheckedDomain.domain].
   List<CheckedDomain> get mergedByRegisteredStatus {
-    Map<String, CheckedDomain> r = <String, CheckedDomain>{};
+    var r = <String, CheckedDomain>{};
     for (final ch in this) {
       final earlyStatus =
           r[ch.domain]?.registeredStatus ?? RegisteredStatus.unknown;

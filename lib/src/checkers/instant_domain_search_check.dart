@@ -7,6 +7,7 @@ import '../default_tlds.dart';
 import '../registered_status.dart';
 import '../checked_domain.dart';
 import '../list_checked_domain_ext.dart';
+import '../utils_ext.dart';
 
 /// \see https://instantdomainsearch.com
 /// \thanks https://github.com/breitburg/domine
@@ -23,7 +24,8 @@ class InstantDomainSearchCheck extends BaseDomainChecker {
     String domainOrHisName, {
     Set<String> tlds = defaultTlds,
   }) async {
-    final (String domainName, String domainTld) = splitDomain(domainOrHisName);
+    final (String domainName, String domainTld) =
+        domainOrHisName.splitNameTldDomain;
     if (domainName.isEmpty && domainTld.isEmpty) {
       throw ArgumentError('Unable to split domain: `$domainOrHisName`.');
     }
@@ -58,13 +60,10 @@ class InstantDomainSearchCheck extends BaseDomainChecker {
     late final Iterable<Map<String, dynamic>> decoded;
     for (;;) {
       try {
-        decoded = [
-          for (final response in await Future.wait([
-            uri1,
-            uri2,
-          ].map(get)))
+        decoded = <String>[
+          for (final response in await Future.wait([uri1, uri2].map(get)))
             if (response.body.isNotEmpty) ...response.body.trim().split('\n'),
-        ].map((e) => jsonDecode(e));
+        ].map((e) => jsonDecode(e) as Map<String, dynamic>);
         break;
       } catch (_) {
         if (!retry) {
@@ -72,14 +71,14 @@ class InstantDomainSearchCheck extends BaseDomainChecker {
         }
       }
 
-      await Future.delayed(const Duration(seconds: 2));
+      await Future<Duration>.delayed(const Duration(seconds: 2));
     }
 
     return <CheckedDomain>[
       for (final check in decoded)
         CheckedDomain(
           name,
-          check['tld'],
+          check['tld'] as String,
           registeredStatus: switch (check['isRegistered']) {
             true => RegisteredStatus.taken,
             false => RegisteredStatus.available,
@@ -92,7 +91,7 @@ class InstantDomainSearchCheck extends BaseDomainChecker {
 
 /// It needed for get a correct responce.
 int _hash(String name, [int t = 27]) {
-  for (int o = 0; o < name.length; ++o) {
+  for (var o = 0; o < name.length; ++o) {
     t = ((t << 5) - t + name.codeUnitAt(o)).toSigned(32);
   }
 

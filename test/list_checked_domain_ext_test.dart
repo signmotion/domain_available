@@ -24,7 +24,7 @@ void main() async {
     test('some elements list, different domains', () async {
       const source = <CheckedDomain>[
         CheckedDomain(
-          'google',
+          'openai',
           'com',
           registeredStatus: RegisteredStatus.taken,
         ),
@@ -43,13 +43,13 @@ void main() async {
         () async {
       const source = <CheckedDomain>[
         CheckedDomain(
-          'google',
+          'openai',
           'com',
           registeredStatus: RegisteredStatus.unknown,
         ),
         checkedA,
         CheckedDomain(
-          'google',
+          'openai',
           'com',
           registeredStatus: RegisteredStatus.unknown,
         ),
@@ -62,13 +62,13 @@ void main() async {
         () async {
       const source = <CheckedDomain>[
         CheckedDomain(
-          'google',
+          'openai',
           'com',
           registeredStatus: RegisteredStatus.unknown,
         ),
         checkedA,
         CheckedDomain(
-          'google',
+          'openai',
           'com',
           registeredStatus: RegisteredStatus.available,
         ),
@@ -80,13 +80,13 @@ void main() async {
     test('some elements list, same domains, unknown + taken status', () async {
       const source = <CheckedDomain>[
         CheckedDomain(
-          'google',
+          'openai',
           'com',
           registeredStatus: RegisteredStatus.unknown,
         ),
         checkedA,
         CheckedDomain(
-          'google',
+          'openai',
           'com',
           registeredStatus: RegisteredStatus.taken,
         ),
@@ -98,13 +98,13 @@ void main() async {
     test('some elements list, same domains, available + unknown', () async {
       const source = <CheckedDomain>[
         CheckedDomain(
-          'google',
+          'openai',
           'com',
           registeredStatus: RegisteredStatus.available,
         ),
         checkedA,
         CheckedDomain(
-          'google',
+          'openai',
           'com',
           registeredStatus: RegisteredStatus.unknown,
         ),
@@ -116,13 +116,13 @@ void main() async {
     test('some elements list, same domains, available + available', () async {
       const source = <CheckedDomain>[
         CheckedDomain(
-          'google',
+          'openai',
           'com',
           registeredStatus: RegisteredStatus.available,
         ),
         checkedA,
         CheckedDomain(
-          'google',
+          'openai',
           'com',
           registeredStatus: RegisteredStatus.available,
         ),
@@ -135,13 +135,13 @@ void main() async {
         () async {
       const source = <CheckedDomain>[
         CheckedDomain(
-          'google',
+          'openai',
           'com',
           registeredStatus: RegisteredStatus.available,
         ),
         checkedA,
         CheckedDomain(
-          'google',
+          'openai',
           'com',
           registeredStatus: RegisteredStatus.taken,
         ),
@@ -153,13 +153,13 @@ void main() async {
     test('some elements list, same domains, taken + unknown', () async {
       const source = <CheckedDomain>[
         CheckedDomain(
-          'google',
+          'openai',
           'com',
           registeredStatus: RegisteredStatus.taken,
         ),
         checkedA,
         CheckedDomain(
-          'google',
+          'openai',
           'com',
           registeredStatus: RegisteredStatus.unknown,
         ),
@@ -171,13 +171,13 @@ void main() async {
     test('some elements list, same domains, taken + available', () async {
       const source = <CheckedDomain>[
         CheckedDomain(
-          'google',
+          'openai',
           'com',
           registeredStatus: RegisteredStatus.taken,
         ),
         checkedA,
         CheckedDomain(
-          'google',
+          'openai',
           'com',
           registeredStatus: RegisteredStatus.available,
         ),
@@ -189,13 +189,13 @@ void main() async {
     test('some elements list, same domains, taken + taken status', () async {
       const source = <CheckedDomain>[
         CheckedDomain(
-          'google',
+          'openai',
           'com',
           registeredStatus: RegisteredStatus.taken,
         ),
         checkedA,
         CheckedDomain(
-          'google',
+          'openai',
           'com',
           registeredStatus: RegisteredStatus.taken,
         ),

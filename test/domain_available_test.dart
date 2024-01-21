@@ -6,7 +6,8 @@ void main() async {
     test('check a domain available for registration', () async {
       const name = 'mykind456932notregistered0941527';
       const tld = 'org';
-      final r = await DomainAvailable('$name.$tld').firstRegisteredStatus();
+      final r =
+          await const DomainAvailable('$name.$tld').firstRegisteredStatus();
       expect(
         r,
         equals(const CheckedDomain(
@@ -18,9 +19,10 @@ void main() async {
     });
 
     test('check a domain unavailable for registration', () async {
-      const name = 'google';
+      const name = 'openai';
       const tld = 'com';
-      final r = await DomainAvailable('$name.$tld').firstRegisteredStatus();
+      final r =
+          await const DomainAvailable('$name.$tld').firstRegisteredStatus();
       expect(
         r,
         equals(const CheckedDomain(
