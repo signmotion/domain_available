@@ -26,14 +26,13 @@ Output:
 ### Sanitize
 
 ```dart
-final checked = await DomainAvailable('openai.com').firstRegisteredStatus();
-print('The ${checked.domain} is ${checked.registeredStatus}.');
+print('https://www.happy.com/path_to/page'.sanitizeDomain);
 ```
 
 Output:
 
 ```sh
-> The openai.com is taken.
+> happy.com
 ```
 
 ## License
