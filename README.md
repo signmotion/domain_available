@@ -8,7 +8,7 @@ Checks if the domain is available.
 
 Use [Instant Domain Search Check](https://instantdomainsearch.com) for check domain name.
 
-## Examples
+## Usage
 
 ### Check
 
