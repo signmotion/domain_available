@@ -1,7 +1,8 @@
 name: domain_available
-description: Checks if the domain is available.
+description: >-
+  Checks if the domain is available. Use `Instant Domain Search Check`
+  for check domain name.
 repository: https://github.com/signmotion/domain_available
-
 topics:
   - domain
   - checker
