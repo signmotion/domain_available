@@ -1,25 +1,25 @@
 # Domain Available
 
+![SDK version](https://badgen.net/pub/sdk-version/domain_available?style=for-the-badge)
+![Supported platforms](https://badgen.net/pub/flutter-platform/domain_available?style=for-the-badge)
+![Supported SDKs](https://badgen.net/pub/dart-platform/domain_available?style=for-the-badge)
+
 ![Cover - Domain Available](https://raw.githubusercontent.com/signmotion/domain_available/master/images/cover.webp)
 
-[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Pub Package](https://img.shields.io/pub/v/domain_available.svg?logo=dart&logoColor=00b9fc&color=blue)](https://pub.dartlang.org/packages/domain_available)
-[![Code Size](https://img.shields.io/github/languages/code-size/signmotion/domain_available?logo=github&logoColor=white)](https://github.com/signmotion/domain_available)
-[![Publisher](https://img.shields.io/pub/publisher/domain_available)](https://pub.dev/publishers/syrokomskyi.com)
+[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Pub Package](https://img.shields.io/pub/v/domain_available.svg?logo=dart&logoColor=00b9fc&color=blue&style=for-the-badge)](https://pub.dartlang.org/packages/domain_available)
+[![Code Size](https://img.shields.io/github/languages/code-size/signmotion/domain_available?logo=github&logoColor=white&style=for-the-badge)](https://github.com/signmotion/domain_available)
+[![Publisher](https://img.shields.io/pub/publisher/domain_available?style=for-the-badge)](https://pub.dev/publishers/syrokomskyi.com)
 
-![SDK version](https://badgen.net/pub/sdk-version/domain_available)
-![Supported platforms](https://badgen.net/pub/flutter-platform/domain_available)
-![Supported SDKs](https://badgen.net/pub/dart-platform/domain_available)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/signmotion/domain_available/dart-ci.yml?logo=github-actions&logoColor=white&style=for-the-badge)](https://github.com/signmotion/domain_available/actions)
+[![Pull Requests](https://img.shields.io/github/issues-pr/signmotion/domain_available?logo=github&logoColor=white&style=for-the-badge)](https://github.com/signmotion/domain_available/pulls)
+[![Issues](https://img.shields.io/github/issues/signmotion/domain_available?logo=github&logoColor=white&style=for-the-badge)](https://github.com/signmotion/domain_available/issues)
+[![Pub Score](https://img.shields.io/pub/points/domain_available?logo=dart&logoColor=00b9fc&style=for-the-badge)](https://pub.dev/packages/domain_available/score)
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/signmotion/domain_available/dart-ci.yml?logo=github-actions&logoColor=white)](https://github.com/signmotion/domain_available/actions)
-[![Pull Requests](https://img.shields.io/github/issues-pr/signmotion/domain_available?logo=github&logoColor=white)](https://github.com/signmotion/domain_available/pulls)
-[![Issues](https://img.shields.io/github/issues/signmotion/domain_available?logo=github&logoColor=white)](https://github.com/signmotion/domain_available/issues)
-[![Pub Score](https://img.shields.io/pub/points/domain_available?logo=dart&logoColor=00b9fc)](https://pub.dev/packages/domain_available/score)
-
-Checks if the domain is available. The easy-to-use, and [well-tested](https://github.com/signmotion/domain_available/tree/master/test) package.
+Checks if the domain is available. The easy-to-use and [well-tested](https://github.com/signmotion/domain_available/tree/master/test) package.
 Feel free to use it in your awesome project.
 
-[![CodeFactor](https://codefactor.io/repository/github/signmotion/domain_available/badge)](https://codefactor.io/repository/github/signmotion/domain_available)
+[![CodeFactor](https://codefactor.io/repository/github/signmotion/domain_available/badge?style=for-the-badge)](https://codefactor.io/repository/github/signmotion/domain_available)
 
 Share some ❤️ and star repo to support the project.
 
